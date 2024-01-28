@@ -12,14 +12,13 @@ namespace test
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2(this);
-            form2.ShowDialog();
+            using (var form = new Form2()) {
+                if (form.ShowDialog() == DialogResult.OK) {
+                    this.label1.Text = form.ReturnValue;
+                }
+            }
+            
 
-        }
-
-        private void Form1_Activated(object sender, EventArgs e)
-        {
-            label1.Text = displaytext;
         }
     }
 }

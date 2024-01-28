@@ -49,7 +49,7 @@
             label1.Name = "label1";
             label1.Size = new Size(59, 25);
             label1.TabIndex = 1;
-            label1.Text = "label1";
+            label1.Text = "";
             // 
             // Form1
             // 
@@ -60,7 +60,7 @@
             Controls.Add(button1);
             Name = "Form1";
             Text = "Form1";
-            Activated += Form1_Activated;
+          //  Activated += Form1_Activated;
             ResumeLayout(false);
             PerformLayout();
         }
